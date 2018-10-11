@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title>Shopping list</title>
+    <style>
+        p{
+            color: yellow;
+            font-family: "arial",sans-serif;
+            font-size: 1.2em;
+        }
+        body{
+            color: white;
+            background-color: black;
+        }
+        .special{
+            font-style: italic
+        }
+        h2.special{
+            text-transform: uppercase;
+        }
+        #purchases{
+            border: 1px solid white;
+            background-color: #333;
+            color: #ccc;
+            padding: 1.7em;
+        }
+        #purchases li{
+            font-weight: bold;
+            font-size: 1.5em;
+        }
+    </style>
+</head>
+<body>
+    <h1>What to buy</h1>
+    <p title="a gentle reminder">Don't forgot to buy this stuff.</p>
+    <ul id="purchases">
+        <li>A tin of beans</li>
+        <li class="sale">Cheese</li>
+        <li class="sale important">Milk</li>
+    </ul>
+    <p class="special">This is a special paragraph</p>
+    <h2 class="special"> So does this headline.</h2>
+    <script>
+        var foo=document.getElementById("purchases")
+        alert(foo.getAttribute("title"))
+        foo.setAttribute("title","new add title!")
+        alert(foo.getAttribute("title"))
+    </script>
+</body>
+</html>
