@@ -3,30 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <title>Image Gallery</title>
-    <style>
-        img{
-            background-color: blue;
-            height: 400px;
-            width: 600px;
-        }
-    </style>
+    <link rel="stylesheet" href="styles/layout.css" media="screen"/>
 </head>
 <body>
     <h1>Snapshots</h1>
     <ul>
         <li>
-            <a href="images/beijilang.jpg" title="A Wolf in Beiji">BeijiWolf</a>
+            <a href="images/beijilang.jpg" onclick="showPic(this);return false;" title="A Wolf in Beiji">BeijiWolf</a>
         </li>
         <li>
-            <a href="images/changjinglu.jpg" title="A changjinglu in forest">Changjing Lu</a>
+            <a href="images/changjinglu.jpg" onclick="showPic(this);return false;" title="A changjinglu in forest">Changjing Lu</a>
         </li>
         <li>
-            <a href="images/xiniu.jpg" title="A xiniu in river">XiNiu</a>
+            <a href="images/xiniu.jpg" onclick="showPic(this);return false;" title="A xiniu in river">XiNiu</a>
         </li>
         <li>
-            <a href="images/yingwu.jpg" title="A Carton Pic of Yingwu">Ying Wu</a>
+            <a href="images/yingwu.jpg" onclick="showPic(this);return false;" title="A Carton Pic of Yingwu">Ying Wu</a>
         </li>
     </ul>
     <img id="placeholder" src="images/placeholder.jpg" alt="the placeholder area">
+    <p id="description">choose a pic</p>
+
+    <script type="text/javascript" src="scripts/showPic.js"></script>
 </body>
 </html>
